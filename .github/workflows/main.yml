@@ -17,7 +17,7 @@ on:
 jobs:
   calling-workflow1:
     name: Workflow1
-    uses: Karunesh-Kumar1998/Reusableworkflow/.github/workflows/Workflow1@main
+    uses: Karunesh-Kumar1998/Reusableworkflow/.github/workflows/Workflow1.yml@main
     with:
       version: 'v2.1.4'
     secrets:
@@ -26,7 +26,7 @@ jobs:
   calling-workflow-2:
     name: Workflow2
     needs: [calling-workflow1]
-    uses: Karunesh-Kumar1998/Reusableworkflow/.github/workflows/Workflow1@main
+    uses: Karunesh-Kumar1998/Reusableworkflow/.github/workflows/Workflow1.yml@main
     with:
       version: 'v2.1.4'
     secrets:
