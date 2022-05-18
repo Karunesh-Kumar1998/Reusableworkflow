@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Chained workflow 2
+name: Workflow2
 
 # Controls when the workflow will run
 on:
@@ -38,6 +38,4 @@ jobs:
           echo "deployment version: ${{ inputs.version }}"
           echo "Credentials were passed as secret: $CREDENTIALS"
           echo "... the secret value is actually: $(echo $CREDENTIALS | jq '.value')"
-          echo
-          echo "Checking if file was cloned..."
-          cat ./this_is_my_code.txt
+          
