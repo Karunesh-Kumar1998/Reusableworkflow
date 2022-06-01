@@ -32,6 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          echo "workflow"
           echo "Hello everybody"
           echo "I was triggered by 'workflow_call' event"
           echo "This is a new version of the workflow, first updated and tested in branch 'feature-xyz'"
