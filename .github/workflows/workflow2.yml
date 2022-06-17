@@ -33,6 +33,7 @@ jobs:
         env:
           CREDENTIALS: ${{ secrets.credentials }}
         run: |
+          echo "The workflow I we deploy in Python script."
           echo "I was triggered by 'workflow_call' event"
           echo "I can update this file, it will have no impact until I change the launcher workflow or if I merge into main branch."
           echo "deployment version: ${{ inputs.version }}"
